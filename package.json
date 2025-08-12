@@ -9,6 +9,7 @@
     "format:prettier": "prettier --write .",
     "build:js": "tsc",
     "build": "bun x @tailwindcss/cli -i ./src/main.css -o ./public/generated.css && bun run build:js",
+    "start": "bun run dist/src/index.js",
     "lint": "run-p 'lint:*'",
     "lint:tsc": "tsc --noEmit",
     "lint:knip": "knip",

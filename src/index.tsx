@@ -61,7 +61,8 @@ if (process.env.NODE_ENV !== "production") {
   });
 }
 
-app.listen(3000);
+const port = Number(process.env.PORT ?? 3000);
+app.listen(port);
 
 console.log(`🦊 Elysia is running at http://${app.server?.hostname}:${app.server?.port}${WEBROOT}`);
 
